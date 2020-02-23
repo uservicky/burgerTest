@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../../../hoc/Aux';
+import Auxi from '../../../hoc/Auxi';
 import Button from '../../UI/Button/Button';
 
 const orderSummary = (props) => {
@@ -12,7 +12,7 @@ const orderSummary = (props) => {
             );
         });
     return (
-        <Aux>
+        <Auxi>
             <h3>Your Order</h3>
             <p>A delicious burger with the following ingredients:</p>
             <ul>
@@ -23,7 +23,7 @@ const orderSummary = (props) => {
             <Button btnType="Danger" clicked={props.purchaseCancelled}>Cancel</Button>
             <Button btnType="Success" clicked={props.purchaseContinue}> Continue </Button>
 
-        </Aux>
+        </Auxi>
     );
 };
 export default orderSummary;
